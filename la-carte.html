@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La carte — Le Kadior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="le-kadior.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-badge"><img src="image/logo.png" alt="Le Kadior — Boulangerie Pâtisserie"></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="nos-univers.html">Nos univers</a>
+    <a href="la-carte.html">La carte</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:+221784666259" class="btn btn-outline">Nous appeler</a>
+    <a href="index.html#commande" class="btn btn-gold">Commander</a>
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Accueil</a>
+  <a href="nos-univers.html">Nos univers</a>
+  <a href="la-carte.html">La carte</a>
+  <a href="histoire.html">Histoire</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html#commande" class="btn btn-gold btn-lg">Commander</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>La carte</div>
+    <h1>Nos spécialités<br>du jour</h1>
+    <p>Une sélection renouvelée chaque matin, préparée avec des produits frais choisis avec soin.</p>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="menu-section">
+  <div class="menu-head reveal">
+    <span class="tag">La carte</span>
+    <h2 class="section-title">Toutes nos préparations</h2>
+    <p class="section-sub" style="margin:0 auto">Cinq menus, un seul atelier — des pains façon quartier sénégalais aux gâteaux de fête, tout est préparé sur place chaque jour. Cliquez sur un menu pour l'afficher.</p>
+    <div class="menu-tabs">
+      <button class="menu-tab active" onclick="showMenu(this,'boulangerie')">Boulangerie</button>
+      <button class="menu-tab" onclick="showMenu(this,'patisserie')">Pâtisserie</button>
+      <button class="menu-tab" onclick="showMenu(this,'gateaux')">Gâteaux</button>
+      <button class="menu-tab" onclick="showMenu(this,'viennoiserie')">Viennoiserie</button>
+      <button class="menu-tab" onclick="showMenu(this,'snack')">Snack</button>
+    </div>
+  </div>
+
+  <div class="menu-groups">
+
+    <div class="menu-group active reveal" id="boulangerie">
+      <div class="menu-group-head">
+        <span class="menu-group-num">01</span>
+        <div>
+          <h3>Boulangerie</h3>
+          <p>Des pains façonnés à la sénégalaise, entre tradition de quartier et exigence artisanale.</p>
+        </div>
+      </div>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="menu-card-img"><img class="local-photo" style="object-position:center 55%" src="image/boulangerie/pain-miche.jpeg" alt="Miche de pain"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Miche de pain</h4>
+              <p>Une grosse miche à la mie généreuse et à la croûte bien dorée, taillée pour être partagée en famille, comme au coin de la rue.</p>
+              <span class="mi-badge pop">Best-seller</span>
+            </div>
+            <span class="mi-price">500 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=500&q=80" alt="Pain ordinaire"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain ordinaire</h4>
+              <p>Le pain de tous les jours, celui qu'on trouve à chaque coin de quartier — simple, chaud et toujours apprécié au petit-déjeuner.</p>
+            </div>
+            <span class="mi-price">150 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <span class="menu-card-badge" title="Céréale locale"><svg viewBox="0 0 24 24"><path d="M12 2v20M12 6l-3-2M12 6l3-2M12 10l-3-2M12 10l3-2M12 14l-3-2M12 14l3-2M12 18l-3-2M12 18l3-2" stroke-linecap="round"/></svg></span>
+            <img class="local-photo" style="object-position:center 78%" src="image/boulangerie/pain-mil.jpeg" alt="Pain au mil">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain au mil</h4>
+              <p>Pétri à la farine de mil pilé, un pain rustique riche en fibres. Le mil se digère lentement et apporte une énergie durable — un bon choix santé pour bien commencer la journée.</p>
+            </div>
+            <span class="mi-price">350 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <span class="menu-card-badge" title="Céréale locale"><svg viewBox="0 0 24 24"><path d="M12 2v20M12 6l-3-2M12 6l3-2M12 10l-3-2M12 10l3-2M12 14l-3-2M12 14l3-2M12 18l-3-2M12 18l3-2" stroke-linecap="round"/></svg></span>
+            <img class="local-photo" style="object-position:center 60%" src="image/boulangerie/pain-mais.jpeg" alt="Pain au maïs">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain au maïs</h4>
+              <p>Farine de maïs et mie moelleuse légèrement sucrée. Une bonne source de fibres et de glucides complexes, pour un pain doré qui change agréablement du pain classique.</p>
+            </div>
+            <span class="mi-price">350 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <span class="menu-card-badge" title="Céréale locale"><svg viewBox="0 0 24 24"><path d="M12 2v20M12 6l-3-2M12 6l3-2M12 10l-3-2M12 10l3-2M12 14l-3-2M12 14l3-2M12 18l-3-2M12 18l3-2" stroke-linecap="round"/></svg></span>
+            <img class="local-photo" style="object-position:center 70%" src="image/boulangerie/pain-thiere.jpeg" alt="Pain thiéré">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain thiéré</h4>
+              <p>Inspiré du thiéré traditionnel à la farine de mil, ce pain garde toute la saveur de nos préparations d'antan tout en profitant des bienfaits nutritifs des céréales locales.</p>
+              <span class="mi-badge new">Nouveau</span>
+            </div>
+            <span class="mi-price">400 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <span class="menu-card-badge" title="Bon pour la santé"><svg viewBox="0 0 24 24"><path d="M6 20c0-8 4-14 12-16-1 9-5 14-12 16Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 18c2-3 4-6 8-10" stroke-linecap="round"/></svg></span>
+            <img class="local-photo" style="object-position:center 65%" src="image/boulangerie/pain-diabetique.jpeg" alt="Pain complet / diabétique">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain complet / diabétique</h4>
+              <p>Farine complète à index glycémique maîtrisé et riche en fibres, pensé pour les personnes diabétiques sans sacrifier le goût.</p>
+            </div>
+            <span class="mi-price">500 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <span class="menu-card-badge" title="Bon pour la santé"><svg viewBox="0 0 24 24"><path d="M6 20c0-8 4-14 12-16-1 9-5 14-12 16Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 18c2-3 4-6 8-10" stroke-linecap="round"/></svg></span>
+            <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=500&q=80" alt="Pain sans sel">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain sans sel</h4>
+              <p>Sans une pincée de sel, ce pain garde tout son moelleux — idéal pour les régimes pauvres en sodium et la tension artérielle.</p>
+            </div>
+            <span class="mi-price">500 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <span class="menu-card-badge" title="Bon pour la santé"><svg viewBox="0 0 24 24"><path d="M6 20c0-8 4-14 12-16-1 9-5 14-12 16Z" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 18c2-3 4-6 8-10" stroke-linecap="round"/></svg></span>
+            <img class="local-photo" style="object-position:center" src="image/boulangerie/pain-diabetique-sans-sel.jpeg" alt="Pain sans sel et diabétique">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain sans-sel-diabétique</h4>
+              <p>La formule la plus stricte, ni sel ni sucre rapide, pour allier plaisir et santé au quotidien.</p>
+            </div>
+            <span class="mi-price">550 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <span class="menu-card-badge" title="Céréale locale"><svg viewBox="0 0 24 24"><path d="M12 2v20M12 6l-3-2M12 6l3-2M12 10l-3-2M12 10l3-2M12 14l-3-2M12 14l3-2M12 18l-3-2M12 18l3-2" stroke-linecap="round"/></svg></span>
+            <img class="local-photo" style="object-position:center 75%" src="image/boulangerie/pain-niebe.jpeg" alt="Pain Niébé">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain Niébé</h4>
+              <p>Enrichi à la farine de niébé, ce pain rustique apporte un supplément de protéines et de fibres — une spécialité du Kadior au goût unique.</p>
+              <span class="mi-badge new">Spécialité</span>
+            </div>
+            <span class="mi-price">400 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img">
+            <img class="local-photo" style="object-position:center 55%" src="image/boulangerie/double-sicap.jpeg" alt="Double Sicap">
+          </div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Double Sicap</h4>
+              <p>Notre grande baguette à la croûte craquante et à la mie aérée — le pain de comptoir préféré du quartier, taillé pour les grandes tablées.</p>
+            </div>
+            <span class="mi-price">300 FCFA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-group reveal" id="patisserie">
+      <div class="menu-group-head">
+        <span class="menu-group-num">02</span>
+        <div>
+          <h3>Pâtisserie</h3>
+          <p>Petites et grandes gourmandises préparées chaque jour dans notre atelier, à grignoter ou à offrir.</p>
+        </div>
+      </div>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=500&q=80" alt="Cake nature"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Cake nature</h4>
+              <p>Moelleux et parfumé à la vanille, notre grand classique du goûter.</p>
+            </div>
+            <span class="mi-price">1 500 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1621236378699-8597faf6a176?w=500&q=80" alt="Biscuits maison"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Biscuits maison</h4>
+              <p>Sablés croustillants préparés sur place, parfaits avec un café ou un thé Touba.</p>
+            </div>
+            <span class="mi-price">800 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1571506165871-ee72a35bc9d4?w=500&q=80" alt="Rochers coco"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Rochers coco</h4>
+              <p>Noix de coco râpée et sucre caramélisé, croquants dehors et fondants dedans.</p>
+            </div>
+            <span class="mi-price">200 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1533910534207-90f31029a78e?w=500&q=80" alt="Beignets"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Beignets</h4>
+              <p>Dorés et moelleux, servis chauds — le grand classique du petit-déjeuner sénégalais.</p>
+              <span class="mi-badge pop">Best-seller</span>
+            </div>
+            <span class="mi-price">150 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&q=80" alt="Brioches"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Brioches</h4>
+              <p>Moelleuses et légèrement sucrées, parfumées à la fleur d'oranger.</p>
+            </div>
+            <span class="mi-price">600 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80" alt="Cake marbré"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Cake marbré</h4>
+              <p>Recette maison, moelleux et généreux — le mariage classique vanille-chocolat.</p>
+              <span class="mi-badge pop">Populaire</span>
+            </div>
+            <span class="mi-price">2 000 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&q=80" alt="Cake barre"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Cake barre</h4>
+              <p>Notre cake maison taillé en barres individuelles, pratique à emporter.</p>
+            </div>
+            <span class="mi-price">500 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1558326567-98ae2405596b?w=500&q=80" alt="Petits fours"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Petits fours</h4>
+              <p>Un assortiment de mignardises sucrées, parfait pour accompagner le thé ou une réception.</p>
+            </div>
+            <span class="mi-price">2 500 FCFA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-group reveal" id="gateaux">
+      <div class="menu-group-head">
+        <span class="menu-group-num">03</span>
+        <div>
+          <h3>Gâteaux &amp; occasions</h3>
+          <p>Pour les anniversaires, les fêtes religieuses et tous les moments qui méritent d'être célébrés.</p>
+        </div>
+      </div>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1558301211-0d8c8ddee6ec?w=500&q=80" alt="Gâteau d'anniversaire"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Gâteau d'anniversaire</h4>
+              <p>Personnalisé selon vos envies — décor, saveurs et message, pour un anniversaire réussi.</p>
+              <span class="mi-badge pop">Sur commande</span>
+            </div>
+            <span class="mi-price">Dès 15 000 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80" alt="Gâteau de fête musulmane"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Gâteau de fête musulmane</h4>
+              <p>Préparé avec soin pour célébrer Tabaski et Korité en famille.</p>
+            </div>
+            <span class="mi-price">Sur commande</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=500&q=80" alt="Gâteau de fête chrétienne"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Gâteau de fête chrétienne</h4>
+              <p>Une pâtisserie festive pour illuminer vos tables de Noël et de Pâques.</p>
+            </div>
+            <span class="mi-price">Sur commande</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&q=80" alt="Part de gâteau"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Part de gâteau</h4>
+              <p>Une portion individuelle pour goûter sans attendre une occasion spéciale.</p>
+            </div>
+            <span class="mi-price">1 000 FCFA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-group reveal" id="viennoiserie">
+      <div class="menu-group-head">
+        <span class="menu-group-num">04</span>
+        <div>
+          <h3>Viennoiserie</h3>
+          <p>Feuilletées et dorées chaque matin dès l'aube, pour un petit-déjeuner parfait.</p>
+        </div>
+      </div>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&q=80" alt="Croissant au beurre"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Croissant au beurre</h4>
+              <p>Feuilletage au beurre fermier, doré à la perfection chaque matin.</p>
+              <span class="mi-badge pop">Incontournable</span>
+            </div>
+            <span class="mi-price">400 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?w=500&q=80" alt="Pain au chocolat"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain au chocolat</h4>
+              <p>Deux barres de chocolat noir enveloppées dans un feuilletage fondant.</p>
+            </div>
+            <span class="mi-price">450 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=500&q=80" alt="Drop"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Drop</h4>
+              <p>Petite viennoiserie roulée et sucrée, gourmande à croquer en une bouchée.</p>
+            </div>
+            <span class="mi-price">350 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=500&q=80" alt="Pain aux raisins"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Pain aux raisins</h4>
+              <p>Spirale feuilletée à la crème pâtissière et raisins secs gonflés au rhum.</p>
+            </div>
+            <span class="mi-price">450 FCFA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-group reveal" id="snack">
+      <div class="menu-group-head">
+        <span class="menu-group-num">05</span>
+        <div>
+          <h3>Snack</h3>
+          <p>Pour un déjeuner rapide ou une pause gourmande, salée cette fois.</p>
+        </div>
+      </div>
+      <div class="menu-cards">
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=500&q=80" alt="Croissant jambon"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Croissant jambon</h4>
+              <p>Croissant feuilleté garni de jambon et fromage fondant.</p>
+            </div>
+            <span class="mi-price">1 200 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1612392062631-94dd858cba88?w=500&q=80" alt="Hot-dog"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Hot-dog</h4>
+              <p>Pain moelleux, saucisse grillée et sauces maison.</p>
+            </div>
+            <span class="mi-price">1 000 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1548369937-47519962c11a?w=500&q=80" alt="Mini pizza"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Mini pizza</h4>
+              <p>Petites pizzas maison, pâte croustillante et garniture généreuse.</p>
+            </div>
+            <span class="mi-price">800 FCFA</span>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img"><img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=500&q=80" alt="Nems"></div>
+          <div class="menu-card-body">
+            <div class="mi-info">
+              <h4>Nems</h4>
+              <p>Croustillants et dorés, servis avec une sauce d'accompagnement.</p>
+            </div>
+            <span class="mi-price">1 500 FCFA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-box">
+    <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1400&q=80')"></div>
+    <div class="cta-inner">
+      <div>
+        <h2>Envie d'un pain encore chaud&nbsp;?<br>Commandez en avance.</h2>
+        <p>Passez votre commande en ligne et venez la récupérer quand ça vous arrange — sans attendre.</p>
+      </div>
+      <div class="cta-btns reveal">
+        <a href="contact.html" class="btn btn-white btn-lg">Commander maintenant</a>
+        <a href="tel:+221784666259" class="btn btn-outline-white btn-lg">Appeler la boutique</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-wrap">
+        <img src="image/logo.png" alt="Le Kadior — Boulangerie Pâtisserie" class="footer-logo-img">
+      </div>
+      <p class="desc">Boulangerie, pâtisserie, viennoiserie et snack — le pain de tradition fait à la main, chaque jour pour tout le quartier.</p>
+      <div class="socials">
+        <a class="social-btn" href="https://www.facebook.com/share/1LjNVexWPU/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a class="social-btn" href="https://www.instagram.com/lekadior_officiel?igsi=ZjkxeHRnYXQ3bzZw&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+        <a class="social-btn" href="https://wa.me/221784666259" aria-label="WhatsApp" target="_blank" rel="noopener">wa</a>
+        <a class="social-btn" href="https://www.tiktok.com/@lekadior_officiel?_r=1&_t=ZS-994DPqMYfBs" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
+      </div>
+    </div>
+    <div>
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="nos-univers.html">Nos univers</a></li>
+        <li><a href="la-carte.html">La carte</a></li>
+        <li><a href="histoire.html">Notre histoire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Nos spécialités</h5>
+      <ul>
+        <li><a href="nos-univers.html#boulangerie">Boulangerie</a></li>
+        <li><a href="nos-univers.html#patisserie">Pâtisserie</a></li>
+        <li><a href="la-carte.html#gateaux">Gâteaux</a></li>
+        <li><a href="nos-univers.html#viennoiserie">Viennoiserie</a></li>
+        <li><a href="la-carte.html#snack">Snack</a></li>
+        <li><a href="index.html#commande">Commande en ligne</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Restez informé</h5>
+      <div class="newsletter">
+        <p>Recevez nos nouvelles spécialités et promotions directement dans votre boîte.</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Votre email">
+          <button>S'inscrire</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Le Kadior. Tous droits réservés.</p>
+    <nav>
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGV</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+const burger = document.getElementById('burgerBtn');
+const mob = document.getElementById('mobNav');
+burger.addEventListener('click', () => mob.classList.toggle('open'));
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.classList.remove('open')));
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => io.observe(el));
+
+function showMenu(btn, id) {
+  document.querySelectorAll('.menu-tab').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.menu-group').forEach(g => {
+    const isTarget = g.id === id;
+    g.classList.toggle('active', isTarget);
+    if (isTarget) g.classList.add('in');
+  });
+}
+
+const validMenus = ['boulangerie','patisserie','gateaux','viennoiserie','snack'];
+const initial = validMenus.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'boulangerie';
+const initialTab = [...document.querySelectorAll('.menu-tab')].find(t => t.getAttribute('onclick').includes("'" + initial + "'"));
+if (initialTab) showMenu(initialTab, initial);
+</script>
+</body>
+</html>

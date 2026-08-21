@@ -13,15 +13,15 @@
 
 <!-- NAV -->
 <nav id="mainNav">
-  <div class="nav-logo">
+  <a href="index.html" class="nav-logo">
     <span class="logo-badge"><img src="image/logo.png" alt="Le Kadior — Boulangerie Pâtisserie"></span>
-  </div>
+  </a>
   <div class="nav-links">
     <a href="#accueil">Accueil</a>
-    <a href="#univers">Nos univers</a>
-    <a href="#menu">La carte</a>
-    <a href="#histoire">Histoire</a>
-    <a href="#contact">Contact</a>
+    <a href="nos-univers.html">Nos univers</a>
+    <a href="la-carte.html">La carte</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="contact.html">Contact</a>
   </div>
   <div class="nav-right">
     <a href="tel:+221784666259" class="btn btn-outline">Nous appeler</a>
@@ -34,10 +34,10 @@
 
 <div class="mob-nav" id="mobNav">
   <a href="#accueil">Accueil</a>
-  <a href="#univers">Nos univers</a>
-  <a href="#menu">La carte</a>
-  <a href="#histoire">Histoire</a>
-  <a href="#contact">Contact</a>
+  <a href="nos-univers.html">Nos univers</a>
+  <a href="la-carte.html">La carte</a>
+  <a href="histoire.html">Histoire</a>
+  <a href="contact.html">Contact</a>
   <a href="#commande" class="btn btn-gold btn-lg">Commander</a>
 </div>
 
@@ -77,10 +77,10 @@
       <span class="tag reveal">Nos univers</span>
       <h2 class="section-title reveal">Quatre métiers,<br>un seul savoir-faire</h2>
     </div>
-    <a href="#menu" class="btn btn-outline reveal">Voir toute la carte</a>
+    <a href="la-carte.html" class="btn btn-outline reveal">Voir toute la carte</a>
   </div>
   <div class="uni-grid">
-    <div class="uni-card reveal">
+    <a class="uni-card reveal" href="nos-univers.html#boulangerie">
       <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Boulangerie">
       <div class="uni-overlay">
         <div class="uni-num">01</div>
@@ -88,8 +88,8 @@
         <p>Baguettes tradition, pain complet, pain de mie — pétris et cuits plusieurs fois par jour.</p>
         <div class="uni-arrow">Découvrir <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       </div>
-    </div>
-    <div class="uni-card reveal">
+    </a>
+    <a class="uni-card reveal" href="nos-univers.html#patisserie">
       <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&q=80" alt="Pâtisserie">
       <div class="uni-overlay">
         <div class="uni-num">02</div>
@@ -97,8 +97,8 @@
         <p>Gâteaux, tartes et entremets faits à la commande pour vos moments spéciaux.</p>
         <div class="uni-arrow">Découvrir <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       </div>
-    </div>
-    <div class="uni-card reveal">
+    </a>
+    <a class="uni-card reveal" href="nos-univers.html#viennoiserie">
       <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80" alt="Viennoiserie">
       <div class="uni-overlay">
         <div class="uni-num">03</div>
@@ -106,8 +106,8 @@
         <p>Croissants au beurre, pains au chocolat, brioches — le matin parfait.</p>
         <div class="uni-arrow">Découvrir <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       </div>
-    </div>
-    <div class="uni-card reveal">
+    </a>
+    <a class="uni-card reveal" href="nos-univers.html#snack">
       <img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&q=80" alt="Snack">
       <div class="uni-overlay">
         <div class="uni-num">04</div>
@@ -115,7 +115,7 @@
         <p>Sandwichs, jus frais et formules — le déjeuner rapide sans compromis.</p>
         <div class="uni-arrow">Découvrir <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
       </div>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -130,37 +130,62 @@
         <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=700&q=85" alt="Spécialités Le Kadior">
       </div>
       <p class="menu-caption">Tout est préparé dans notre atelier, chaque jour dès l'aube.</p>
+      <a href="la-carte.html" class="btn btn-outline" style="margin-top:24px">Voir toute la carte</a>
     </div>
     <div class="reveal-r">
       <div class="menu-tabs">
         <button class="menu-tab active" onclick="filterMenu(this,'tout')">Tout</button>
-        <button class="menu-tab" onclick="filterMenu(this,'pain')">Pain</button>
-        <button class="menu-tab" onclick="filterMenu(this,'viennois')">Viennoiserie</button>
+        <button class="menu-tab" onclick="filterMenu(this,'pain')">Boulangerie</button>
         <button class="menu-tab" onclick="filterMenu(this,'patiss')">Pâtisserie</button>
+        <button class="menu-tab" onclick="filterMenu(this,'gateaux')">Gâteaux</button>
+        <button class="menu-tab" onclick="filterMenu(this,'viennois')">Viennoiserie</button>
         <button class="menu-tab" onclick="filterMenu(this,'snack')">Snack</button>
       </div>
       <div class="menu-items" id="menuItems">
         <div class="menu-item" data-cat="pain">
           <div class="mi-info">
-            <h4>Baguette tradition</h4>
-            <p>Farine T65, fermentation longue, croûte croustillante et mie alvéolée.</p>
+            <h4>Miche de pain</h4>
+            <p>Une grosse miche à la mie généreuse, taillée pour être partagée en famille, comme au coin de la rue.</p>
             <span class="mi-badge pop">Best-seller</span>
           </div>
-          <span class="mi-price">À compléter</span>
+          <span class="mi-price">500 FCFA</span>
         </div>
         <div class="menu-item" data-cat="pain">
           <div class="mi-info">
-            <h4>Pain complet &amp; céréales</h4>
-            <p>Farines sélectionnées, graines de sésame, tournesol et pavot.</p>
+            <h4>Pain au mil</h4>
+            <p>Pétri à la farine de mil pilé, un pain rustique au goût authentique de nos terroirs.</p>
           </div>
-          <span class="mi-price">À compléter</span>
+          <span class="mi-price">350 FCFA</span>
         </div>
-        <div class="menu-item" data-cat="pain">
+        <div class="menu-item" data-cat="patiss">
           <div class="mi-info">
-            <h4>Pain de campagne</h4>
-            <p>Levain naturel, mie serrée et savoureuse, idéal pour accompagner les plats.</p>
+            <h4>Cake marbré</h4>
+            <p>Recette maison, moelleux et généreux — le mariage classique vanille-chocolat.</p>
+            <span class="mi-badge pop">Populaire</span>
           </div>
-          <span class="mi-price">À compléter</span>
+          <span class="mi-price">2 000 FCFA</span>
+        </div>
+        <div class="menu-item" data-cat="patiss">
+          <div class="mi-info">
+            <h4>Beignets</h4>
+            <p>Dorés et moelleux, servis chauds — le grand classique du petit-déjeuner sénégalais.</p>
+          </div>
+          <span class="mi-price">150 FCFA</span>
+        </div>
+        <div class="menu-item" data-cat="gateaux">
+          <div class="mi-info">
+            <h4>Gâteau d'anniversaire</h4>
+            <p>Personnalisé selon vos envies — décor, saveurs et message, pour un anniversaire réussi.</p>
+            <span class="mi-badge pop">Sur commande</span>
+          </div>
+          <span class="mi-price">Dès 15 000 FCFA</span>
+        </div>
+        <div class="menu-item" data-cat="gateaux">
+          <div class="mi-info">
+            <h4>Gâteau de fête</h4>
+            <p>Musulmane ou chrétienne, préparé avec soin pour célébrer vos grands moments en famille.</p>
+          </div>
+          <span class="mi-price">Sur commande</span>
         </div>
         <div class="menu-item" data-cat="viennois">
           <div class="mi-info">
@@ -168,52 +193,28 @@
             <p>Feuilletage au beurre fermier, doré à la perfection chaque matin.</p>
             <span class="mi-badge pop">Incontournable</span>
           </div>
-          <span class="mi-price">À compléter</span>
+          <span class="mi-price">400 FCFA</span>
         </div>
         <div class="menu-item" data-cat="viennois">
           <div class="mi-info">
             <h4>Pain au chocolat</h4>
             <p>Deux barres de chocolat noir enveloppées dans un feuilletage fondant.</p>
           </div>
-          <span class="mi-price">À compléter</span>
-        </div>
-        <div class="menu-item" data-cat="viennois">
-          <div class="mi-info">
-            <h4>Brioche tressée</h4>
-            <p>Moelleuse, légèrement sucrée, parfumée à la fleur d'oranger.</p>
-            <span class="mi-badge new">Nouveau</span>
-          </div>
-          <span class="mi-price">À compléter</span>
-        </div>
-        <div class="menu-item" data-cat="patiss">
-          <div class="mi-info">
-            <h4>Tarte aux fruits de saison</h4>
-            <p>Fond sablé, crème pâtissière, fruits frais du marché.</p>
-          </div>
-          <span class="mi-price">À compléter</span>
-        </div>
-        <div class="menu-item" data-cat="patiss">
-          <div class="mi-info">
-            <h4>Gâteau marbré</h4>
-            <p>Recette maison, moelleux et généreux — parfait pour les anniversaires.</p>
-            <span class="mi-badge pop">Populaire</span>
-          </div>
-          <span class="mi-price">À compléter</span>
+          <span class="mi-price">450 FCFA</span>
         </div>
         <div class="menu-item" data-cat="snack">
           <div class="mi-info">
-            <h4>Sandwich poulet-légumes</h4>
-            <p>Pain maison, poulet grillé, crudités de saison et sauce maison.</p>
+            <h4>Croissant jambon</h4>
+            <p>Croissant feuilleté garni de jambon et fromage fondant.</p>
           </div>
-          <span class="mi-price">À compléter</span>
+          <span class="mi-price">1 200 FCFA</span>
         </div>
         <div class="menu-item" data-cat="snack">
           <div class="mi-info">
-            <h4>Formule petit-déjeuner</h4>
-            <p>Viennoiserie + jus d'orange frais + boisson chaude.</p>
-            <span class="mi-badge pop">Formule</span>
+            <h4>Mini pizza</h4>
+            <p>Petites pizzas maison, pâte croustillante et garniture généreuse.</p>
           </div>
-          <span class="mi-price">À compléter</span>
+          <span class="mi-price">800 FCFA</span>
         </div>
       </div>
     </div>
@@ -267,7 +268,7 @@
           </div>
         </div>
       </div>
-      <a href="#contact" class="btn btn-gold" style="margin-top:36px">Venir nous rendre visite</a>
+      <a href="contact.html" class="btn btn-gold" style="margin-top:36px">Venir nous rendre visite</a>
     </div>
   </div>
 </section>
@@ -325,7 +326,7 @@
         <p>Passez votre commande en ligne et venez la récupérer quand ça vous arrange — sans attendre.</p>
       </div>
       <div class="cta-btns reveal">
-        <a href="#contact" class="btn btn-white btn-lg">Commander maintenant</a>
+        <a href="contact.html" class="btn btn-white btn-lg">Commander maintenant</a>
         <a href="tel:+221784666259" class="btn btn-outline-white btn-lg">Appeler la boutique</a>
       </div>
     </div>
@@ -344,7 +345,7 @@
           <div class="info-icon">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13Z" stroke-linecap="round"/><circle cx="12" cy="9" r="3" stroke-linecap="round"/></svg>
           </div>
-          <div><h5>Adresse</h5><p>Mbour, Grand-Mbour<br>Route de l'Hôpital</p></div>
+          <div><h5>Adresse</h5><p>Mbour, Grand-Mbour<br>Route de l'Hôpital<br><a href="https://maps.app.goo.gl/U2yhf6NaQ5wUG9c48" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">Voir sur Google Maps</a></p></div>
         </div>
         <div class="info-card">
           <div class="info-icon">
@@ -368,9 +369,8 @@
     </div>
     <div class="reveal-r">
       <div class="map-frame">
-        <div class="map-placeholder">
-          <svg viewBox="0 0 40 40"><path d="M20 4c8 0 13 6 13 13 0 10-13 20-13 20S7 27 7 17C7 10 12 4 20 4Z" stroke-linecap="round"/><circle cx="20" cy="16" r="4" stroke-linecap="round"/></svg>
-          <p>Intégrez votre localisation Google Maps ici — une ligne de code suffit.</p>
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=14.4288654,-16.9792309&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Le Kadior"></iframe>
         </div>
         <div class="contact-form">
           <h4>Envoyer un message</h4>
@@ -406,29 +406,30 @@
       </div>
       <p class="desc">Boulangerie, pâtisserie, viennoiserie et snack — le pain de tradition fait à la main, chaque jour pour tout le quartier.</p>
       <div class="socials">
-        <a class="social-btn" href="#" aria-label="Facebook">f</a>
-        <a class="social-btn" href="#" aria-label="Instagram">ig</a>
+        <a class="social-btn" href="https://www.facebook.com/share/1LjNVexWPU/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a class="social-btn" href="https://www.instagram.com/lekadior_officiel?igsi=ZjkxeHRnYXQ3bzZw&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
         <a class="social-btn" href="https://wa.me/221784666259" aria-label="WhatsApp" target="_blank" rel="noopener">wa</a>
-        <a class="social-btn" href="#" aria-label="TikTok">tk</a>
+        <a class="social-btn" href="https://www.tiktok.com/@lekadior_officiel?_r=1&_t=ZS-994DPqMYfBs" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
       </div>
     </div>
     <div>
       <h5>Navigation</h5>
       <ul>
         <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#univers">Nos univers</a></li>
-        <li><a href="#menu">La carte</a></li>
-        <li><a href="#histoire">Notre histoire</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="nos-univers.html">Nos univers</a></li>
+        <li><a href="la-carte.html">La carte</a></li>
+        <li><a href="histoire.html">Notre histoire</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
     <div>
       <h5>Nos spécialités</h5>
       <ul>
-        <li><a href="#menu">Boulangerie</a></li>
-        <li><a href="#menu">Pâtisserie</a></li>
-        <li><a href="#menu">Viennoiserie</a></li>
-        <li><a href="#menu">Snack &amp; Formules</a></li>
+        <li><a href="nos-univers.html#boulangerie">Boulangerie</a></li>
+        <li><a href="nos-univers.html#patisserie">Pâtisserie</a></li>
+        <li><a href="la-carte.html#gateaux">Gâteaux</a></li>
+        <li><a href="nos-univers.html#viennoiserie">Viennoiserie</a></li>
+        <li><a href="la-carte.html#snack">Snack</a></li>
         <li><a href="#commande">Commande en ligne</a></li>
       </ul>
     </div>

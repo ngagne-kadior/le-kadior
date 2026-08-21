@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos univers — Le Kadior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="le-kadior.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-badge"><img src="image/logo.png" alt="Le Kadior — Boulangerie Pâtisserie"></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="nos-univers.html">Nos univers</a>
+    <a href="la-carte.html">La carte</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:+221784666259" class="btn btn-outline">Nous appeler</a>
+    <a href="index.html#commande" class="btn btn-gold">Commander</a>
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Accueil</a>
+  <a href="nos-univers.html">Nos univers</a>
+  <a href="la-carte.html">La carte</a>
+  <a href="histoire.html">Histoire</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html#commande" class="btn btn-gold btn-lg">Commander</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1509440159596-0249088772ff?w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>Nos univers</div>
+    <h1>Quatre métiers,<br>un seul savoir-faire</h1>
+    <p>De la boulangerie au snack, chaque univers du Kadior est pensé et préparé sur place, dès l'aube, avec la même exigence.</p>
+  </div>
+</section>
+
+<!-- UNIVERS DETAIL -->
+<section class="section universes">
+  <span class="tag reveal">Nos univers</span>
+  <h2 class="section-title reveal">Découvrez ce que nous<br>préparons chaque jour</h2>
+  <p class="section-sub reveal">Boulangerie, pâtisserie, viennoiserie et snack : quatre spécialités, un seul atelier, et un même souci du détail dans chaque préparation.</p>
+
+  <div class="uni-detail-grid">
+    <div class="uni-detail-card reveal" id="boulangerie">
+      <div class="uni-detail-img"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=700&q=80" alt="Boulangerie"></div>
+      <div class="uni-detail-body">
+        <h3>01 · Boulangerie</h3>
+        <p>Miche de pain, pain ordinaire, pains aux céréales locales (mil, maïs, thiéré) et pains spéciaux diabétiques ou sans sel — pétris et cuits plusieurs fois par jour dans notre atelier.</p>
+        <div class="uni-tags">
+          <span>Miche de pain</span><span>Pain au mil</span><span>Pain thiéré</span><span>Pains diabétiques &amp; sans sel</span>
+        </div>
+        <a class="uni-detail-link" href="la-carte.html#boulangerie">Voir sur la carte <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="uni-detail-card reveal" id="patisserie">
+      <div class="uni-detail-img"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=700&q=80" alt="Pâtisserie"></div>
+      <div class="uni-detail-body">
+        <h3>02 · Pâtisserie</h3>
+        <p>Cakes, biscuits maison, rochers coco, beignets, brioches et petits fours — sans oublier nos gâteaux d'anniversaire et de fête faits sur commande, pensés pour sublimer vos moments spéciaux.</p>
+        <div class="uni-tags">
+          <span>Cake marbré</span><span>Beignets</span><span>Petits fours</span><span>Gâteaux sur commande</span>
+        </div>
+        <a class="uni-detail-link" href="la-carte.html#patisserie">Voir sur la carte <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="uni-detail-card reveal" id="viennoiserie">
+      <div class="uni-detail-img"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=700&q=80" alt="Viennoiserie"></div>
+      <div class="uni-detail-body">
+        <h3>03 · Viennoiserie</h3>
+        <p>Croissants au beurre fermier, pains au chocolat, drops et pains aux raisins — feuilletés et dorés chaque matin dès l'aube pour un réveil parfait.</p>
+        <div class="uni-tags">
+          <span>Croissant au beurre</span><span>Pain au chocolat</span><span>Drop</span><span>Pain aux raisins</span>
+        </div>
+        <a class="uni-detail-link" href="la-carte.html#viennoiserie">Voir sur la carte <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+    <div class="uni-detail-card reveal" id="snack">
+      <div class="uni-detail-img"><img src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=700&q=80" alt="Snack"></div>
+      <div class="uni-detail-body">
+        <h3>04 · Snack</h3>
+        <p>Croissants jambon, hot-dogs, mini pizzas et nems — pour un déjeuner rapide ou une pause gourmande, sans compromis sur la qualité.</p>
+        <div class="uni-tags">
+          <span>Croissant jambon</span><span>Hot-dog</span><span>Mini pizza</span><span>Nems</span>
+        </div>
+        <a class="uni-detail-link" href="la-carte.html#snack">Voir sur la carte <svg viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-box">
+    <div class="cta-bg" style="background-image:url('https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1400&q=80')"></div>
+    <div class="cta-inner">
+      <div>
+        <h2>Envie de tout goûter&nbsp;?<br>Passez nous voir.</h2>
+        <p>Notre atelier tourne dès l'aube — venez découvrir nos quatre univers sur place ou consultez la carte complète.</p>
+      </div>
+      <div class="cta-btns reveal">
+        <a href="la-carte.html" class="btn btn-white btn-lg">Voir la carte</a>
+        <a href="contact.html" class="btn btn-outline-white btn-lg">Nous trouver</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-wrap">
+        <img src="image/logo.png" alt="Le Kadior — Boulangerie Pâtisserie" class="footer-logo-img">
+      </div>
+      <p class="desc">Boulangerie, pâtisserie, viennoiserie et snack — le pain de tradition fait à la main, chaque jour pour tout le quartier.</p>
+      <div class="socials">
+        <a class="social-btn" href="https://www.facebook.com/share/1LjNVexWPU/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a class="social-btn" href="https://www.instagram.com/lekadior_officiel?igsi=ZjkxeHRnYXQ3bzZw&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+        <a class="social-btn" href="https://wa.me/221784666259" aria-label="WhatsApp" target="_blank" rel="noopener">wa</a>
+        <a class="social-btn" href="https://www.tiktok.com/@lekadior_officiel?_r=1&_t=ZS-994DPqMYfBs" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
+      </div>
+    </div>
+    <div>
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="nos-univers.html">Nos univers</a></li>
+        <li><a href="la-carte.html">La carte</a></li>
+        <li><a href="histoire.html">Notre histoire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Nos spécialités</h5>
+      <ul>
+        <li><a href="nos-univers.html#boulangerie">Boulangerie</a></li>
+        <li><a href="nos-univers.html#patisserie">Pâtisserie</a></li>
+        <li><a href="la-carte.html#gateaux">Gâteaux</a></li>
+        <li><a href="nos-univers.html#viennoiserie">Viennoiserie</a></li>
+        <li><a href="la-carte.html#snack">Snack</a></li>
+        <li><a href="index.html#commande">Commande en ligne</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Restez informé</h5>
+      <div class="newsletter">
+        <p>Recevez nos nouvelles spécialités et promotions directement dans votre boîte.</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Votre email">
+          <button>S'inscrire</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Le Kadior. Tous droits réservés.</p>
+    <nav>
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGV</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+const burger = document.getElementById('burgerBtn');
+const mob = document.getElementById('mobNav');
+burger.addEventListener('click', () => mob.classList.toggle('open'));
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.classList.remove('open')));
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => io.observe(el));
+</script>
+</body>
+</html>

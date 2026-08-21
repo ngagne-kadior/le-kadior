@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Le Kadior</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="le-kadior.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="mainNav">
+  <a href="index.html" class="nav-logo">
+    <span class="logo-badge"><img src="image/logo.png" alt="Le Kadior — Boulangerie Pâtisserie"></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="nos-univers.html">Nos univers</a>
+    <a href="la-carte.html">La carte</a>
+    <a href="histoire.html">Histoire</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:+221784666259" class="btn btn-outline">Nous appeler</a>
+    <a href="index.html#commande" class="btn btn-gold">Commander</a>
+    <button class="burger" id="burgerBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mob-nav" id="mobNav">
+  <a href="index.html">Accueil</a>
+  <a href="nos-univers.html">Nos univers</a>
+  <a href="la-carte.html">La carte</a>
+  <a href="histoire.html">Histoire</a>
+  <a href="contact.html">Contact</a>
+  <a href="index.html#commande" class="btn btn-gold btn-lg">Commander</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=1600&q=85')"></div>
+  <div class="page-hero-overlay"></div>
+  <div class="page-hero-content">
+    <div class="breadcrumb"><a href="index.html">Accueil</a><span>/</span>Contact</div>
+    <h1>Passez nous voir</h1>
+    <p>Notre équipe vous accueille avec le sourire — et l'odeur du pain frais vous guidera.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact">
+  <div class="contact-grid">
+    <div class="contact-info reveal-l">
+      <span class="tag">Nous trouver</span>
+      <h2 class="section-title">Toutes nos coordonnées</h2>
+      <p class="section-sub">Un seul endroit pour nous appeler, nous écrire ou venir nous rendre visite.</p>
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-7.5 8-13a8 8 0 1 0-16 0c0 5.5 8 13 8 13Z" stroke-linecap="round"/><circle cx="12" cy="9" r="3" stroke-linecap="round"/></svg>
+          </div>
+          <div><h5>Adresse</h5><p>Mbour, Grand-Mbour<br>Route de l'Hôpital<br><a href="https://maps.app.goo.gl/U2yhf6NaQ5wUG9c48" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600">Voir sur Google Maps</a></p></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 5c0-1 1-2 2-2h2c1 3 1 4 0 5-1 1-1 2 0 3s4 4 5 5 2 1 3 0c1-1 2-1 5 0v2c0 1-1 2-2 2-8 0-15-7-15-15Z" stroke-linecap="round"/></svg>
+          </div>
+          <div><h5>Téléphone / WhatsApp</h5><p><a href="tel:+221784666259">78 466 62 59</a></p></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">
+            <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6" stroke-linecap="round"/></svg>
+          </div>
+          <div><h5>Email</h5><p><a href="mailto:lekadior24@gmail.com">lekadior24@gmail.com</a></p></div>
+        </div>
+      </div>
+      <div class="hours-grid" style="margin-top:20px">
+        <h5>Horaires d'ouverture</h5>
+        <p class="hours-days">Tous les jours</p>
+        <div class="hour-row"><span>Matin</span><span>06h – 14h</span></div>
+        <div class="hour-row"><span>Soir</span><span>16h – 23h</span></div>
+      </div>
+    </div>
+    <div class="reveal-r">
+      <div class="map-frame">
+        <div class="map-embed">
+          <iframe src="https://www.google.com/maps?q=14.4288654,-16.9792309&z=16&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localisation Le Kadior"></iframe>
+        </div>
+        <div class="contact-form">
+          <h4>Envoyer un message</h4>
+          <div class="form-row">
+            <div class="form-field"><label>Prénom</label><input type="text" placeholder="Votre prénom"></div>
+            <div class="form-field"><label>Nom</label><input type="text" placeholder="Votre nom"></div>
+          </div>
+          <div class="form-field"><label>Email</label><input type="email" placeholder="votre@email.com"></div>
+          <div class="form-field">
+            <label>Objet</label>
+            <select>
+              <option value="">Choisir un objet…</option>
+              <option>Commande sur mesure</option>
+              <option>Gâteau d'anniversaire</option>
+              <option>Commande en gros</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-field"><label>Message</label><textarea placeholder="Votre message…"></textarea></div>
+          <button class="btn btn-gold" style="width:100%;justify-content:center;padding:14px">Envoyer le message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo-wrap">
+        <img src="image/logo.png" alt="Le Kadior — Boulangerie Pâtisserie" class="footer-logo-img">
+      </div>
+      <p class="desc">Boulangerie, pâtisserie, viennoiserie et snack — le pain de tradition fait à la main, chaque jour pour tout le quartier.</p>
+      <div class="socials">
+        <a class="social-btn" href="https://www.facebook.com/share/1LjNVexWPU/?mibextid=wwXIfr" aria-label="Facebook" target="_blank" rel="noopener">f</a>
+        <a class="social-btn" href="https://www.instagram.com/lekadior_officiel?igsi=ZjkxeHRnYXQ3bzZw&utm_source=qr" aria-label="Instagram" target="_blank" rel="noopener">ig</a>
+        <a class="social-btn" href="https://wa.me/221784666259" aria-label="WhatsApp" target="_blank" rel="noopener">wa</a>
+        <a class="social-btn" href="https://www.tiktok.com/@lekadior_officiel?_r=1&_t=ZS-994DPqMYfBs" aria-label="TikTok" target="_blank" rel="noopener">tk</a>
+      </div>
+    </div>
+    <div>
+      <h5>Navigation</h5>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="nos-univers.html">Nos univers</a></li>
+        <li><a href="la-carte.html">La carte</a></li>
+        <li><a href="histoire.html">Notre histoire</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Nos spécialités</h5>
+      <ul>
+        <li><a href="nos-univers.html#boulangerie">Boulangerie</a></li>
+        <li><a href="nos-univers.html#patisserie">Pâtisserie</a></li>
+        <li><a href="la-carte.html#gateaux">Gâteaux</a></li>
+        <li><a href="nos-univers.html#viennoiserie">Viennoiserie</a></li>
+        <li><a href="la-carte.html#snack">Snack</a></li>
+        <li><a href="index.html#commande">Commande en ligne</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>Restez informé</h5>
+      <div class="newsletter">
+        <p>Recevez nos nouvelles spécialités et promotions directement dans votre boîte.</p>
+        <div class="newsletter-input">
+          <input type="email" placeholder="Votre email">
+          <button>S'inscrire</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Le Kadior. Tous droits réservés.</p>
+    <nav>
+      <a href="#">Mentions légales</a>
+      <a href="#">Confidentialité</a>
+      <a href="#">CGV</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+const burger = document.getElementById('burgerBtn');
+const mob = document.getElementById('mobNav');
+burger.addEventListener('click', () => mob.classList.toggle('open'));
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.classList.remove('open')));
+
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: 0.12 });
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
