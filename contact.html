@@ -176,8 +176,14 @@
 <script>
 const burger = document.getElementById('burgerBtn');
 const mob = document.getElementById('mobNav');
-burger.addEventListener('click', () => mob.classList.toggle('open'));
-mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mob.classList.remove('open')));
+burger.addEventListener('click', () => { mob.classList.toggle('open'); burger.classList.toggle('open'); });
+mob.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { mob.classList.remove('open'); burger.classList.remove('open'); }));
+
+// Nav shrink on scroll
+const mainNav = document.getElementById('mainNav');
+const onNavScroll = () => mainNav.classList.toggle('scrolled', window.scrollY > 40);
+window.addEventListener('scroll', onNavScroll, { passive: true });
+onNavScroll();
 
 const io = new IntersectionObserver(entries => {
   entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
